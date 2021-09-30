@@ -1,5 +1,5 @@
 body {
-    background-color: deepskyblue;
+    background-color: skyblue;
     color: white;
 }
 
@@ -14,8 +14,38 @@ body {
 }
 
 h1 {
-    font-size: 30px;
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+    text-decoration: none;
 }
+
+#h1 {
+    font-size: 25px;
+    text-align: center;
+    color: white;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+h2 {
+    font-size: 21px;
+    margin-left: 10px;
+}
+
+@-webkit-keyframes glow {
+    from {
+        text-shadow: 0 0 20px #fff, 0 0 30px dodgerblue, 0 0 40px dodgerblue, 0 0 50px dodgerblue, 0 0 60px dodgerblue, 0 0 70px dodgerblue, 0 0 80px dodgerblue;
+    }
+
+    to {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px darkblue, 0 0 40px darkblue, 0 0 50px darkblue, 0 0 60px darkblue, 0 0 70px darkblue;
+    }
+}
+
 
 #Contact {
     text-align: center;
@@ -24,6 +54,8 @@ h1 {
 #vision {
     color: white;
     font-size: 14.5px;
+    text-align: left;
+    line-height: 30px;
 }
 
 hr {
@@ -48,7 +80,6 @@ i {
     font-family: serif;
     text-align: center;
     font-size: 14.5px;
-    color:black;
 }
 
 #image {
@@ -57,19 +88,6 @@ i {
     height: 200px;
 }
 
-#vision {
-    text-align: left;
-    line-height: 30px;
-}
-
-h1 {
-    font-size: 25px;
-    color: white;
-    text-align: center;
-    -webkit-animation: glow 1s ease-in-out infinite alternate;
-    -moz-animation: glow 1s ease-in-out infinite alternate;
-    animation: glow 1s ease-in-out infinite alternate;
-}
 
 h3 {
     font-size: 20px;
@@ -78,25 +96,6 @@ h3 {
 p {
     font-size: 13.5px;
     margin-left: 10px;
-}
-
-#h1 {
-    font-size: 25px;
-    text-align: center;
-    color: white;
-    -webkit-animation: glow 1s ease-in-out infinite alternate;
-    -moz-animation: glow 1s ease-in-out infinite alternate;
-    animation: glow 1s ease-in-out infinite alternate;
-}
-
-@-webkit-keyframes glow {
-    from {
-        text-shadow: 0 0 20px #fff, 0 0 30px dodgerblue, 0 0 40px dodgerblue, 0 0 50px dodgerblue, 0 0 60px dodgerblue, 0 0 70px dodgerblue, 0 0 80px dodgerblue;
-    }
-
-    to {
-        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px darkblue, 0 0 40px darkblue, 0 0 50px darkblue, 0 0 60px darkblue, 0 0 70px darkblue;
-    }
 }
 
 #myCarousel {
@@ -112,12 +111,78 @@ p {
     color: RGBA(255, 248, 255, 0.62);
 }
 
-h2 {
-    font-size: 21px;
-    margin-left: 10px;
+
+
+
+
+#marc {
+    font-size: 18px;
+}
+
+#home {
+    font-size: 30px;
+}
+
+#icon {
+    color: #9E9E9E;
+}
+
+#icon:hover {
+    color: white;
 }
 
 
+#enrollment {
+    color: white;
+    text-decoration: underline;
+}
+
+#enrollment:hover {
+    color: RGBA(255, 248, 255, 0.62);
+    text-decoration: none;
+}
+
+#enroll {
+    line-height: 30px;
+}
+
+#principal {
+    margin-left: 15px;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.travel_mainDiv {
+    float: left;
+    width: 33.3%;
+    padding: 5px;
+    border: 9px solid black ;
+}
+
+#achievementsID {
+    padding-bottom: 10px;
+}
+
+.movie_head {
+    font-size: 20px;
+    padding: 6px 22px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    width: 100%;
+    display: inline-block;
+}
+
+.movie_head i {
+    float: right;
+}
+
+.movie_text span {
+    color: white;
+}
 /*
 .dropbtn {
     background-color: #212121;
@@ -193,51 +258,4 @@ button a:hover {
     text-decoration: none;
     color: white;
 }
-*/
-#marc {
-    font-size: 18px;
-}
-h1 {
-    text-decoration: none;
-}
-
-#home {
-    font-size: 30px;
-}
-
-#icon {
-    color: #9E9E9E;
-}
-
-#icon:hover {
-    color: white;
-}
-
-#Principal {
-    margin-top: -280px;
-}
-
-#paragraphs {
-    line-height: 30px;
-    margin-left: 220px;
-}
-
-#enrollment {
-    color: white;
-    text-decoration: underline;
-}
-
-#enrollment:hover {
-    color: RGBA(255, 248, 255, 0.62);
-    text-decoration: none;
-}
-
-#enroll {
-    margin-left: 200px;
-    margin-right: 200px;
-    line-height: 30px;
-}
-
-#principal {
-    margin-left: 15px;
-}
+*\
